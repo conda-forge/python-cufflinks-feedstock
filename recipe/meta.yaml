@@ -1,6 +1,6 @@
 {% set namespace = "python" %}
 {% set name = "cufflinks" %}
-{% set version = "0.14.5" %}
+{% set version = "0.16" %}
 
 package:
   name: {{ namespace|lower }}-{{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 304f9a30b753e36a9d398133543c9b48214fcf0535d971871894fc3058799c5f
+  sha256: ed79e16966edb03e35e900615b08bf471990cb4a1e933a2abe2c56f2ca537498
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - ipywidgets >=7.0.0
     - numpy >=1.9.2
     - pandas >=0.19.2
-    - plotly >=3.0.0
+    - plotly >=3.0.0,<4.0.0a0
     - six >=1.9.0
 
 test:
