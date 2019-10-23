@@ -1,6 +1,6 @@
 {% set namespace = "python" %}
 {% set name = "cufflinks" %}
-{% set version = "0.16" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ namespace|lower }}-{{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ed79e16966edb03e35e900615b08bf471990cb4a1e933a2abe2c56f2ca537498
+  sha256: a30724ff73fa83c80c29c701b0d6426aea562d8aed97f49d3cc9c209eadb8ac7
 
 build:
   noarch: python
