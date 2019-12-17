@@ -21,6 +21,7 @@ requirements:
     - pip
   run:
     - python
+    - chart-studio >=1.0.0
     - colorlover >=0.2.1
     - ipython >=5.3.0
     - ipywidgets >=7.0.0
