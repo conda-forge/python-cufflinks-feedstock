@@ -1,9 +1,9 @@
-{% set namespace = "python" %}
 {% set name = "cufflinks" %}
 {% set version = "0.17.0" %}
+{% set build_number = "1" %}
 
 package:
-  name: {{ namespace|lower }}-{{ name|lower }}
+  name: python-{{ name|lower }}
   version: {{ version }}
 
 source:
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: {{ build_number }}
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -38,6 +38,9 @@ outputs:
   - name: python-cufflinks
 
   - name: cufflinks-py
+    build:
+      noarch: python
+      number: {{ build_number }}
     requirements:
       host:
         - python
