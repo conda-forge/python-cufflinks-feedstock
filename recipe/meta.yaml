@@ -34,6 +34,20 @@ test:
   imports:
     - cufflinks
 
+outputs:
+  - name: python-cufflinks
+
+  - name: cufflinks-py
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - {{ pin_subpackage('python-cufflinks', exact=True) }}
+    test:
+      imports:
+        - cufflinks
+
 about:
   home: https://github.com/santosjorge/cufflinks
   license: MIT
@@ -44,3 +58,4 @@ about:
 extra:
   recipe-maintainers:
     - dhirschfeld
+    - timkpaine
