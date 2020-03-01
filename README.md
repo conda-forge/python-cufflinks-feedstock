@@ -29,6 +29,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cufflinks--py-green.svg)](https://anaconda.org/conda-forge/cufflinks-py) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cufflinks-py.svg)](https://anaconda.org/conda-forge/cufflinks-py) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cufflinks-py.svg)](https://anaconda.org/conda-forge/cufflinks-py) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cufflinks-py.svg)](https://anaconda.org/conda-forge/cufflinks-py) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-python--cufflinks-green.svg)](https://anaconda.org/conda-forge/python-cufflinks) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-cufflinks.svg)](https://anaconda.org/conda-forge/python-cufflinks) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-cufflinks.svg)](https://anaconda.org/conda-forge/python-cufflinks) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-cufflinks.svg)](https://anaconda.org/conda-forge/python-cufflinks) |
 
 Installing python-cufflinks
@@ -40,16 +41,16 @@ Installing `python-cufflinks` from the `conda-forge` channel can be achieved by 
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `python-cufflinks` can be installed with:
+Once the `conda-forge` channel has been enabled, `cufflinks-py, python-cufflinks` can be installed with:
 
 ```
-conda install python-cufflinks
+conda install cufflinks-py python-cufflinks
 ```
 
-It is possible to list all of the versions of `python-cufflinks` available on your platform with:
+It is possible to list all of the versions of `cufflinks-py` available on your platform with:
 
 ```
-conda search python-cufflinks --channel conda-forge
+conda search cufflinks-py --channel conda-forge
 ```
 
 
@@ -117,4 +118,5 @@ Feedstock Maintainers
 =====================
 
 * [@dhirschfeld](https://github.com/dhirschfeld/)
+* [@timkpaine](https://github.com/timkpaine/)
 
